@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* @import url('css/font-awesome.min.css');*/
+
+/* In html file */
+/*<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta name="viewport" content="width=device-width">*/
+
+/**
+ * 8.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+@media (max-width: 1599px) {
+}
+
+@media (max-width: 1200px) {
+	
+	}
+
+@media (max-width: 1069px) {
+
+}
+
+@media (max-width: 992px) {
+#blog .card-body h5{font-size:17px;}
+#safe .safe_box ul li{margin-left:15px;}
+#safe .safe_box ul li i{margin-left:px;}
+#safe .safe_box:before{    content: "|";
+    position: absolute;
+    left: 64%;
+    top: 14%;
+    display: block;
+    width: 70px;
+    color: #fff;}
+	#mail .mail_left ul li i{font-size:22px;}
+	#mail .mail_left ul li p{    margin-left: 39px;
+    font-size: 18px;
+    margin-top: -30px;}
+	footer .moda h5{font-size:19px;}
+	footer .moda li a{font-size:16px;}
+}
+
+/* Collapse oversized image and pulled images after iPad breakpoint. */
+@media (max-width: 767px) {
+.shop span{display:none;}
+.navbar-light .navbar-nav .shop{
+    position: absolute;
+    top: 4%;
+    right: 23%;
+}
+.navbar-light .navbar-nav .user{    position: absolute;
+    top: 4%;
+    right: 27%;
+}
+.navbar-nav .dropdown-menu{float:none; position:inherit;}
+#product .btn_b{font-size:12px;}
+#product .card-body h4{font-size:15px;}
+#category .cat_box{margin-top:15px;}
+#safe .safe_box:before{left:36%; top:25%;}
+#mail .mail_left ul{margin-top:22px;}
+#mail .mail_right{    margin-top: -7px;
+    margin-left: 39px;}
+	#mail{padding:0px;}
+	#experience hgroup h5{ font-size:15px;} 
+	#experience .btn{font-size:15px;}
+	#foot img{width:100%;}
+@media (max-width: 480px) {
+.navbar-light .navbar-nav .shop{right:17%;}
+.navbar-light .navbar-nav .user{right:24%;}
+#slider .slider_content p{display:none;}
+#slider .slider_content h1{font-size:25px;}
+#slider .slider_content{top:15%;}
+#safe .safe_box:before{left:41%;}
+#mail .mail_left ul li i{font-size:14px;}
+#mail .mail_left ul li p{font-size:14px; margin-left: 19px;}
+}
+
+/* Mobile devices */
+@media (max-width: 359px) {
+.navbar-light .navbar-nav .shop{right:21%;}
+.navbar-light .navbar-nav .user{right:28%;}
+#slider .slider_content h1{font-size:19px;}
+#slider .slider_content .btn{font-size:12px;}
+#product .nav-tabs .nav-link{font-size:12px;}
+#safe .safe_box:before{top:13%; left:53%;}
+#mail .mail_left ul li p{font-size:10px;}
+#mail .mail_right{margin:0px;}
+#experience .btn{font-size:12px;}
+#experience hgroup h5{font-size:12px;}
+footer h4{font-size:22px;}
+footer .moda li a{font-size:12px;}
+/**
+ * 9.0 Print
+ * ----------------------------------------------------------------------------
+ */
+
+/* Retina-specific styles. */
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+
+}
+
+@media print {
+
+}
